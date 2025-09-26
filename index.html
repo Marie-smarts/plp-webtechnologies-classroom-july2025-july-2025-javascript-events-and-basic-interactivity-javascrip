@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Interactive Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🎉 JavaScript Interactivity Project</h1>
+
+    <!-- Event Handling -->
+    <section>
+        <h2>Event Handling</h2>
+        <button id="alertBtn">Click Me</button>
+        <p id="message"></p>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section>
+        <h2>Interactive Elements</h2>
+
+        <!-- Dark/Light Mode -->
+        <button id="themeToggle">🌞 Toggle Dark Mode</button>
+
+        <!-- Counter -->
+        <div>
+            <button id="decrement">➖</button>
+            <span id="counterValue">0</span>
+            <button id="increment">➕</button>
+        </div>
+
+        <!-- Collapsible FAQ -->
+        <div class="faq">
+            <button class="faq-toggle">What is this project?</button>
+            <p class="faq-content">It’s a practice project to learn event handling, interactivity, and form validation
+                in JavaScript.</p>
+        </div>
+    </section>
+
+    <!--Form Validation -->
+    <section>
+        <h2>Form Validation</h2>
+        <form id="signupForm">
+            <label>
+                Name: <input type="text" id="name" required>
+                <span class="error" id="nameError"></span>
+            </label>
+            <br>
+            <label>
+                Email: <input type="text" id="email">
+                <span class="error" id="emailError"></span>
+            </label>
+            <br>
+            <label>
+                Password: <input type="password" id="password">
+                <span class="error" id="passwordError"></span>
+            </label>
+            <br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="formSuccess"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
